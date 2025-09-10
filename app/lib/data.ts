@@ -9,7 +9,17 @@ import {
 } from './definitions';
 import { formatCurrency } from './utils';
 
-const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
+// Initialize a single Postgres client. Prefer POSTGRES_URL, fall back to DATABASE_URL.
+const connectionString = process.env.POSTGRES_URL || process.env.DATABASE_URL;
+
+if (!connectionString) {
+  // Fail fast with a clear message instead of attempting localhost:5432.
+  throw new Error(
+    'Database connection string not set. Define POSTGRES_URL or DATABASE_URL in your environment.'
+  );
+}
+
+const sql = postgres(connectionString, { ssl: 'require' });
 
 export async function fetchRevenue() {
   try {
