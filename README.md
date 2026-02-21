@@ -2,6 +2,21 @@
 
 A full-stack dashboard application built by following the official [Next.js Learn Course](https://nextjs.org/learn/dashboard-app) (App Router, all 15 chapters).
 
+## Screenshots
+
+<table>
+  <tr>
+    <td><img src="public/demo/1.png" alt="Dashboard" width="100%"></td>
+    <td><img src="public/demo/2.png" alt="Invoices" width="100%"></td>
+    <td><img src="public/demo/3.png" alt="Create Invoice" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center">Dashboard</td>
+    <td align="center">Invoices</td>
+    <td align="center">Create Invoice</td>
+  </tr>
+</table>
+
 ## What I Learned
 
 - App Router: layouts, pages, dynamic routes, route groups
