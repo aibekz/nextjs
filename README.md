@@ -2,6 +2,12 @@
 
 A full-stack dashboard application built by following the official [Next.js Learn Course](https://nextjs.org/learn/dashboard-app) (App Router, all 15 chapters).
 
+## Demo
+
+**Live:** [nextjs-explorations.vercel.app](https://nextjs-explorations.vercel.app)
+
+**Login:** `user@nextmail.com` / `123456`
+
 ## Screenshots
 
 <table>
