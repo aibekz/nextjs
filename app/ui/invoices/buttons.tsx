@@ -28,7 +28,6 @@ export function UpdateInvoice({ id }: { id: string }) {
 export function DeleteInvoice({ id }: { id: string }) {
   return (
     <>
-      {/* Submitting this form calls the deleteInvoice server action, which currently throws to test error handling */}
       <form action={deleteInvoice.bind(null, id)}>
         <button type="submit" className="rounded-md border p-2 hover:bg-gray-100">
           <span className="sr-only">Delete</span>
